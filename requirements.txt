@@ -1,0 +1,59 @@
+# J.A.R.V.I.S v5.0 Dependencies — Local-First Pipeline
+
+# ── Core Audio ─────────────────────────────────────────────────
+sounddevice>=0.4.6
+numpy>=1.24.0
+
+# ── Wake Word (local, offline — Vosk with SetGrammar) ──────────
+vosk>=0.3.45
+
+# ── STT: faster-whisper (local, CTranslate2-optimized) ────────
+faster-whisper>=1.0.0
+
+# ── TTS: Kokoro (primary, local neural) ────────────────────────
+kokoro-onnx>=0.3.0      # Local neural ONNX-based TTS (~180ms, no internet)
+onnxruntime>=1.16.0     # ONNX Runtime for CPU/GPU inference
+soundfile>=0.12.0       # WAV I/O for Kokoro audio output
+# System dependency: espeak-ng (Windows MSI from GitHub releases)
+
+# ── TTS: Fallbacks ─────────────────────────────────────────────
+edge-tts>=6.1.0         # Fallback #1: network-based Microsoft voices
+pyttsx3>=2.90           # Fallback #2: offline SAPI5 voices
+pydub>=0.25.1           # MP3 → PCM conversion for audio playback
+
+# ── LLM: HTTP client for Ollama/Groq/Gemini ────────────────────
+httpx>=0.27.0
+
+# ── UI ─────────────────────────────────────────────────────────
+PyQt6>=6.6.0
+
+# ── Screen Vision (V5) ────────────────────────────────────────
+mss>=9.0.0              # Screen capture at 1fps (<1% CPU)
+imagehash>=4.3.0        # Perceptual hashing for change detection
+transformers>=4.40.0    # moondream2 vision model loader
+torch>=2.0.0            # PyTorch backend for transformers
+Pillow>=10.0.0          # Image processing
+
+# ── Windows UI Automation (V5) ─────────────────────────────────
+uiautomation>=2.0.0     # Windows UI element tree access
+pywinauto>=0.6.8        # High-level UI automation wrappers (patterns, dialogs, menus)
+pygetwindow>=0.0.9      # Window focus management
+pywin32>=306            # Windows COM/API access
+pycaw>=20230407         # Windows audio volume control
+comtypes>=1.4.0         # COM interface for pycaw
+
+# ── System ─────────────────────────────────────────────────────
+psutil>=5.9.0
+pynput>=1.7.6
+pyautogui>=0.9.54
+pyperclip>=1.8.2
+duckduckgo_search>=8.0.0
+
+# ── OCR (Tier 4 UI automation — was imported but missing) ──────
+pytesseract>=0.3.10
+
+# ── Secrets management ─────────────────────────────────────────
+python-dotenv>=1.0.0      # Load API keys from .env (never hardcode)
+
+# ── Gemini SDK ─────────────────────────────────────────────────
+google-generativeai>=0.8.0

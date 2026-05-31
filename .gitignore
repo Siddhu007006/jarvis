@@ -1,0 +1,74 @@
+# ── Python ─────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# ── Virtual Environment ────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── 🔐 SECRETS — NEVER COMMIT ──────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Jarvis config with secrets ─────────────────────────────────
+# Use config/settings.template.json instead
+config/api_keys.json
+config/settings.json
+
+# ── Jarvis runtime files ───────────────────────────────────────
+logs/
+*.log
+pythonw_crash.log
+memory/*.json
+memory/*.jsonl
+config/ui_position.json
+
+# ── AI model weights (large binary files) ──────────────────────
+resources/*.onnx
+resources/*.bin
+resources/*.pt
+resources/*.pth
+
+# ── IDE ────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# -- Test/scratch -------------------------------------------------------
+scratch/
+*.tmp
+temp_*.wav
+temp_*.mp3
+
+# -- Training data (generated at runtime) -------------------------------
+training_data/
+
+# -- Failure logs (generated at runtime) --------------------------------
+logs/failures/
+
+# -- Agent/tool configs (local machine specific) ------------------------
+.agents/
+.antigravity/
+.antigravity-ide/
+.gemini/
+.claude/
+.claude.json
+.codex/
+.jarvis_profiles/
+.gsd/
+.mcp.json

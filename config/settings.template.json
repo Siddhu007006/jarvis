@@ -1,0 +1,21 @@
+{
+    "llm_provider": "groq",
+    "llm_model": "llama-3.3-70b-versatile",
+    "ollama_url": "http://localhost:11434",
+    "planner_provider": "groq",
+    "planner_model": "llama-3.3-70b-versatile",
+    "vision_provider": "ollama",
+    "vision_model": "moondream",
+    "tts_provider": "kokoro",
+    "tts_voice": "en-US-JennyNeural",
+    "kokoro_voice": "af_heart",
+    "stt_provider": "faster-whisper",
+    "stt_model": "base",
+    "screen_watcher_enabled": true,
+    "proactive_agent_enabled": true,
+    "fallback_to_gemini": true,
+    "fallback_to_ollama": true,
+    "ollama_model": "qwen2.5-coder:7b",
+    "fast_ollama_model": "phi3:mini",
+    "_note": "API keys (GROQ_API_KEY, GEMINI_API_KEY) are loaded from .env — never put them here."
+}
