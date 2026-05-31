@@ -1,0 +1,23 @@
+Jarvis - Local-First AI Voice Assistant
+Copyright 2025 Siddharth Reddy (https://github.com/Siddhu007006)
+
+This product was originally created by Siddharth Reddy.
+
+The name "Jarvis" as used in this project, the Jarvis logo, and the
+Jarvis brand identity are the intellectual property of Siddharth Reddy.
+
+If you use, fork, or modify this software, you MUST:
+  1. Retain this NOTICE file in all copies or substantial portions
+  2. Give clear attribution to Siddharth Reddy as the original creator
+  3. Not misrepresent the origin of this software
+  4. Not use the "Jarvis" name to endorse your derivative product
+     without explicit written permission from the original author
+
+This software includes the following third-party components:
+  - faster-whisper (MIT License) - Speech-to-Text
+  - edge-tts (MIT License) - Text-to-Speech
+  - PyQt6 (GPL v3) - User Interface
+  - Vosk (Apache 2.0) - Wake Word Detection
+  - sounddevice (MIT License) - Audio I/O
+
+For the full license, see the LICENSE file in this repository.

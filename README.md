@@ -1,5 +1,10 @@
 # Jarvis MK37 (v5.0)
 
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Creator](https://img.shields.io/badge/Creator-Siddharth_Reddy-orange.svg)](https://github.com/Siddhu007006)
+
+> **Created by [Siddharth Reddy](https://github.com/Siddhu007006)** — Original author and maintainer.
+
 Jarvis is an autonomous, vision-based, human-like AI assistant designed specifically for Windows 11. Unlike standard web-based AI chatbots, Jarvis can "see" your desktop screen, interpret what is happening, plan multi-step workflows, and control your mouse, keyboard, volume, and applications autonomously just like a human would.
 
 Jarvis features an elegant, Apple-inspired **Dynamic Island UI** that floats on top of your screen, responding dynamically with glowing animations depending on whether Jarvis is listening, thinking, speaking, or executing tasks.
@@ -95,3 +100,17 @@ jarvis/
     *   *File operations:* "Delete temporary files in the file explorer."
     *   *Conversational queries:* "Jarvis, explain the difference between processes and threads."
 4.  **Proactive Mode:** Keep Jarvis running while you code or browse. If you make a mistake in your terminal or leave your screen idle, Jarvis will notice and speak up to guide you!
+
+---
+
+## 📄 License & Attribution
+
+Copyright 2025 **Siddharth Reddy** ([Siddhu007006](https://github.com/Siddhu007006))
+
+Licensed under the [Apache License 2.0](LICENSE). You are free to use, modify, and distribute this software, provided you:
+
+1. **Give credit** — retain the original copyright and NOTICE file
+2. **State changes** — clearly mark any modifications you make
+3. **Don't misrepresent** — do not claim you are the original creator of Jarvis
+
+See [NOTICE](NOTICE) for full attribution requirements.
